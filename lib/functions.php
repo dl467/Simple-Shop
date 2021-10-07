@@ -25,6 +25,7 @@ function se($v, $k = null, $default = "", $isEcho = true) {
         return htmlspecialchars($returnValue, ENT_QUOTES);
     }
 }
+
 //TODO 2: filter helpers
 function sanitize_email($email = "") {
     return filter_var(trim($email), FILTER_SANITIZE_EMAIL);
@@ -32,6 +33,7 @@ function sanitize_email($email = "") {
 function is_valid_email($email = "") {
     return filter_var(trim($email), FILTER_VALIDATE_EMAIL);
 }
+
 //TODO 3: User Helpers
 function is_logged_in() {
     return isset($_SESSION["user"]); //se($_SESSION, "user", false, false);
@@ -64,4 +66,25 @@ function get_user_id() {
     }
     return false;
 }
+
 //TODO 4: Flash Message Helpers
+function flash($msg = "", $color = "info")
+{
+    $message = ["text" => $msg, "color" => $color];
+    if (isset($_SESSION['flash'])) {
+        array_push($_SESSION['flash'], $message);
+    } else {
+        $_SESSION['flash'] = array();
+        array_push($_SESSION['flash'], $message);
+    }
+}
+
+function getMessages()
+{
+    if (isset($_SESSION['flash'])) {
+        $flashes = $_SESSION['flash'];
+        $_SESSION['flash'] = array();
+        return $flashes;
+    }
+    return array();
+}
