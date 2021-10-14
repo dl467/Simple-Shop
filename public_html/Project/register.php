@@ -23,6 +23,7 @@ reset_session();
 </form>
 <script>
     function validate(form) {
+
         //TODO 1: implement JavaScript validation
         //ensure it returns false for an error and true for success
 
@@ -30,11 +31,13 @@ reset_session();
     }
 </script>
 <?php
+
 //TODO 2: add PHP Code
 if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm"])) {
     $email = se($_POST, "email", "", false);
     $password = se($_POST, "password", "", false);
     $confirm = se($_POST, "confirm", "", false);
+<<<<<<< HEAD
     $username = se($_POST, "username", "", false);
     //TODO 3
 
@@ -44,12 +47,20 @@ if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm
     if (empty($email)) {
         flash("Email must not be empty");
         $hasError = true;
+=======
+    
+    //TODO 3
+    if (empty($email)) {
+        flash("Email must not be empty");
+        $hasErrors = true;
+>>>>>>> main
     }
     //$email = filter_var($email, FILTER_SANITIZE_EMAIL);
     $email = sanitize_email($email);
     //validate
     //if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     if (!is_valid_email($email)) {
+<<<<<<< HEAD
         flash("Invalid email");
         $hasError = true;
     }
@@ -77,20 +88,59 @@ if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm
         //flash("<pre>" . var_export($errors, true) . "</pre>");
     } else {
         //flash("Welcome, $email"); //will show on home.php
+=======
+        flash("Email is invalid");
+        $hasErrors = true;
+    }
+    if (empty($password)) {
+        flash("Password must not be empty");
+        $hasErrors = true;
+    }
+    if (empty($confirm)) {
+        flash("Confirm Password must not be empty");
+        $hasErrors = true;
+    }
+    if (strlen($password) < 8) {
+        flash("Password too short");
+        $hasErrors = true;
+    }
+    if (strlen($password) > 0 && $password !== $confirm) {
+        flash("Passwords must match");
+        $hasErrors = true;
+    }
+    if ($hasErrors) {
+        //Nothing to output here, flash will do it
+        //can likely flip the if condition
+        //echo "<pre>" . var_export($errors, true) . "</pre>";
+    } else {
+        flash("Welcome, $email");
+>>>>>>> main
         $hash = password_hash($password, PASSWORD_BCRYPT);
         $db = getDB();
         $stmt = $db->prepare("INSERT INTO Users (email, password, username) VALUES(:email, :password, :username)");
         try {
+<<<<<<< HEAD
             $stmt->execute([":email" => $email, ":password" => $hash, ":username" => $username]);
             flash("You've registered, yay...");
         } catch (Exception $e) {
             /*flash("There was a problem registering");
             flash("<pre>" . var_export($e, true) . "</pre>");*/
             users_check_duplicate($e->errorInfo);
+=======
+            $stmt->execute([":email" => $email, ":password" => $hash]);
+            flash("You've registered, yay...");
+        } catch (Exception $e) {
+            flash("There was a problem registering");
+            flash(var_export($e, true));
+>>>>>>> main
         }
     }
 }
 ?>
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 <?php
 require(__DIR__ . "/../../partials/flash.php");
 ?>

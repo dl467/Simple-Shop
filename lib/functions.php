@@ -26,6 +26,7 @@ function se($v, $k = null, $default = "", $isEcho = true)
         return htmlspecialchars($returnValue, ENT_QUOTES);
     }
 }
+
 //TODO 2: filter helpers
 function sanitize_email($email = "")
 {
@@ -35,6 +36,7 @@ function is_valid_email($email = "")
 {
     return filter_var(trim($email), FILTER_VALIDATE_EMAIL);
 }
+
 //TODO 3: User Helpers
 function is_logged_in($redirect = false, $destination = "login.php")
 {
@@ -77,6 +79,10 @@ function get_user_id()
     }
     return false;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 //TODO 4: Flash Message Helpers
 function flash($msg = "", $color = "info")
 {
@@ -97,6 +103,7 @@ function getMessages()
         return $flashes;
     }
     return array();
+<<<<<<< HEAD
 }
 //TODO generic helpers
 function reset_session()
@@ -119,4 +126,6 @@ function users_check_duplicate($errorInfo)
         //TODO come up with a nice error message
         flash("<pre>" . var_export($errorInfo, true) . "</pre>");
     }
+=======
+>>>>>>> main
 }
