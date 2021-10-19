@@ -26,7 +26,6 @@ function se($v, $k = null, $default = "", $isEcho = true)
         return htmlspecialchars($returnValue, ENT_QUOTES);
     }
 }
-
 //TODO 2: filter helpers
 function sanitize_email($email = "")
 {
@@ -36,7 +35,6 @@ function is_valid_email($email = "")
 {
     return filter_var(trim($email), FILTER_VALIDATE_EMAIL);
 }
-
 //TODO 3: User Helpers
 function is_logged_in($redirect = false, $destination = "login.php")
 {
