@@ -136,10 +136,11 @@ function endGame() {
   context.textAlign = 'center';
   context.fillText('Game Over. Final Score: ' + score, canvas.width / 2, canvas.height / 2);
 }
-
+//After score of 3 the up and down movement keys are switched!
 // Listen for keydown events
 canvas.addEventListener('keydown', function(event) {
   event.preventDefault();
+  if(score < 3 ){
   if (event.keyCode === 38) { // UP
     up = true;
   }
@@ -149,18 +150,40 @@ canvas.addEventListener('keydown', function(event) {
   if (event.keyCode === 32) { // SPACE
     shoot();
   }
+    }
+    else{
+        if (event.keyCode === 40) { // down
+             up = true;
+        }
+        if (event.keyCode === 38) { // up
+             down = true;
+        }
+        if (event.keyCode === 32) { // SPACE
+             shoot();
+    }
+    }
 });
 
 
 // Listen for keyup events
 canvas.addEventListener('keyup', function(event) {
   event.preventDefault();
+  if(score < 3){
   if (event.keyCode === 38) { // UP 
     up = false;
   }
   if (event.keyCode === 40) { // DOWN
     down = false;
   }
+    }
+    else{
+        if (event.keyCode === 40) { // down
+    up = false;
+  }
+  if (event.keyCode === 38) { // up
+    down = false;
+  }
+    }
 });
 
 // Clear the canvas
@@ -185,7 +208,7 @@ function shoot() {
         bullet.x = ship.x + ship.l;
         bullet.y = ship.y + ship.l / 2;
         bullet.dx = 1;
-        bullet.dy = .25 / (Math.random() * 2.5)  -.5;
+        bullet.dy = (Math.random() * 3)  -1;
 
     }
   }
