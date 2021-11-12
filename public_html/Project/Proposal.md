@@ -49,7 +49,7 @@ Hello
                     - Screenshot #3 Showing password is hashed.
                     
                 - Screenshot #4 <img width="910" alt="Screen Shot 2021-11-11 at 9 19 23 PM" src="https://user-images.githubusercontent.com/70830819/141397677-2af8995e-e442-4583-ba3d-2e4b64dbcd31.png">
-                    - Showing Email must be unique.
+                    - Screenshot #4 Showing Email must be unique.
                     
                 - Screenshot #5 <img width="910" alt="Screen Shot 2021-11-11 at 9 20 40 PM" src="https://user-images.githubusercontent.com/70830819/141397791-0b1683ed-c303-4f83-bf3d-3fd0010c7e20.png">
                     - Screenshot #5 Showing Username must be unique
@@ -169,35 +169,43 @@ Hello
                 - Screenshot #1 <img width="910" alt="Screen Shot 2021-11-11 at 9 31 04 PM" src="https://user-images.githubusercontent.com/70830819/141398775-bae62b11-541c-451a-a63b-649de6696598.png"> <img width="910" alt="Screen Shot 2021-11-11 at 9 32 39 PM" src="https://user-images.githubusercontent.com/70830819/141398929-85d16619-84ef-48b6-929d-01fe2690ef8f.png"> <img width="1046" alt="Screen Shot 2021-11-11 at 9 51 02 PM" src="https://user-images.githubusercontent.com/70830819/141400758-e36a5ef1-1957-436f-9528-fbb6ebe38f8a.png">
                     - Screenshot #1 Showing friendly messages/errors.
 
-    - [ ] (mm/dd/yyyy of completion) User will be able to see their profile
+    - [x] (11/11/2021 of completion) User will be able to see their profile
 
         -  List of Evidence of Feature Completion
 
-            - Status: Pending (Completed, Partially working, Incomplete, Pending)
+            - Status: Completed 
             
-            - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+            - Direct Link: https://dl467-prod.herokuapp.com/Project/profile.php 
             
             - Pull Requests
-                - PR link #1 (repeat as necessary)
+                - PR link #1 https://github.com/dl467/IT202-009/pull/82 
             
             - Screenshots
-                - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-                    - Screenshot #1 description explaining what you're trying to show
+                - Screenshot #1 (<img width="1438" alt="Screen Shot 2021-11-11 at 10 29 07 PM" src="https://user-images.githubusercontent.com/70830819/141404170-9b65a04d-3750-4c91-894c-5f68eb0cf351.png">
+                    - Screenshot #1 Showing Users are able to see their profile.
 
-    - [ ] (mm/dd/yyyy of completion) User will be able to edit their profile
+    - [x] (11/11/2021 of completion) User will be able to edit their profile
 
         -  List of Evidence of Feature Completion
 
-            - Status: Pending (Completed, Partially working, Incomplete, Pending)
+            - Status: Completed
             
-            - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+            - Direct Link: https://dl467-prod.herokuapp.com/Project/profile.php 
             
             - Pull Requests
-                - PR link #1 (repeat as necessary)
+                - PR link #1 https://github.com/dl467/IT202-009/pull/82 
             
             - Screenshots
-                - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-                    - Screenshot #1 description explaining what you're trying to show
+                - Screenshot #1 <img width="1438" alt="Screen Shot 2021-11-11 at 10 29 51 PM" src="https://user-images.githubusercontent.com/70830819/141404234-65dc87be-c671-4179-89de-d85bc603d43f.png"><img width="1438" alt="Screen Shot 2021-11-11 at 10 31 42 PM" src="https://user-images.githubusercontent.com/70830819/141404406-6cd667ba-9f5d-4b49-81a6-6d6c8402b611.png">
+                    - Screenshot #1 Showing email/username is checked before change.
+                    
+                - Screenshot #2 <img width="1438" alt="Screen Shot 2021-11-11 at 10 35 43 PM" src="https://user-images.githubusercontent.com/70830819/141404798-1de66322-344d-4f23-a944-7666a4032d06.png"><img width="1438" alt="Screen Shot 2021-11-11 at 10 35 58 PM" src="https://user-images.githubusercontent.com/70830819/141404813-cfe29d43-7f16-45ba-87fd-82ba3b61b84c.png">
+                    - Screenshot #2 Showing other validations are checked as well.
+
+                - Screenshot #3 <img width="1438" alt="Screen Shot 2021-11-11 at 10 37 27 PM" src="https://user-images.githubusercontent.com/70830819/141404888-12469e82-a6fd-4b59-a759-afff74fee52d.png">
+                    - Screenshot #3 Showing password is able to reset with correct information.
+                
+                    
 
 
 - Milestone 2
