@@ -58,35 +58,49 @@ Hello
                     - Screenshot #6 Showing that when email and username are not cleared.
                 
 
-    - [ ] (mm/dd/yyyy of completion) User will be able to login to their account (given they enter the correct credentials)
+    - [x] (11/11/2021 of completion) User will be able to login to their account (given they enter the correct credentials)
 
         -  List of Evidence of Feature Completion
 
-            - Status: Pending (Completed, Partially working, Incomplete, Pending)
+            - Status: Completed
             
-            - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+            - Direct Link: https://dl467-prod.herokuapp.com/Project/login.php
             
             - Pull Requests
-                - PR link #1 (repeat as necessary)
+                - PR link #1 https://github.com/dl467/IT202-009/pull/80
             
             - Screenshots
-                - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-                    - Screenshot #1 description explaining what you're trying to show
+                - Screenshot #1 <img width="910" alt="Screen Shot 2021-11-11 at 9 31 04 PM" src="https://user-images.githubusercontent.com/70830819/141398775-bae62b11-541c-451a-a63b-649de6696598.png"> <img width="910" alt="Screen Shot 2021-11-11 at 9 31 39 PM" src="https://user-images.githubusercontent.com/70830819/141398824-ac38c391-bc26-4e4d-96a5-add1308157f4.png">
+                    - Screenshot #1 Showing user is able to login with email and username
 
-    - [ ] (mm/dd/yyyy of completion) User will be able to logout
+                - Screenshot #2 <img width="910" alt="Screen Shot 2021-11-11 at 9 32 39 PM" src="https://user-images.githubusercontent.com/70830819/141398929-85d16619-84ef-48b6-929d-01fe2690ef8f.png"> <img width="910" alt="Screen Shot 2021-11-11 at 9 32 34 PM" src="https://user-images.githubusercontent.com/70830819/141398960-c93fb7be-524a-47cd-bc47-1faf2228c973.png">
+                    - Screenshot #2 Showing friendly error when email is incorrect or password is incorrect.
+                    
+                - Screenshot #3 <img width="1046" alt="Screen Shot 2021-11-11 at 9 41 31 PM" src="https://user-images.githubusercontent.com/70830819/141399820-689037d1-38ce-4fb2-8ab0-6218100a4caa.png">
+                    - Screenshot #3 Showing logging in fetch's user role
+                    
+                - Screenshot #4 <img width="1046" alt="Screen Shot 2021-11-11 at 9 43 55 PM" src="https://user-images.githubusercontent.com/70830819/141400087-12dc2272-32c0-413d-95fa-45fd0f867b1b.png">
+                    - Screenshot #4 Showing logging in will move you to home, which is not available to non-users.
+                  
+
+    - [x] (11/11/2021 of completion) User will be able to logout
 
         -  List of Evidence of Feature Completion
 
-            - Status: Pending (Completed, Partially working, Incomplete, Pending)
+            - Status: Completed
             
-            - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+            - Direct Link: https://dl467-prod.herokuapp.com/Project/login.php
             
             - Pull Requests
-                - PR link #1 (repeat as necessary)
+                - PR link #1 https://github.com/dl467/IT202-009/pull/80
             
             - Screenshots
-                - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-                    - Screenshot #1 description explaining what you're trying to show
+                - Screenshot #1 <img width="1046" alt="Screen Shot 2021-11-11 at 9 42 53 PM" src="https://user-images.githubusercontent.com/70830819/141400209-3cf44b9b-1ce3-4af8-83c9-39f40fb73a09.png">
+                    - Screenshot #1 Showing users are able to log out and message is shown. User is also moved back to login.
+                                        
+                - Screenshot #2 <img width="1046" alt="Screen Shot 2021-11-11 at 9 51 02 PM" src="https://user-images.githubusercontent.com/70830819/141400758-e36a5ef1-1957-436f-9528-fbb6ebe38f8a.png">
+                    - Screenshot #2 Showing that session is destroyed.
+                    
 
     - [ ] (mm/dd/yyyy of completion) Basic security rules implemented
 
