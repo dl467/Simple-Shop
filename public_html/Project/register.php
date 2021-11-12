@@ -5,7 +5,7 @@ $email = se($_POST, "email", "", false);
 $username = se($_POST, "username", "", false);
 ?>
 <div class="container-fluid">
-    <h1>Register</h1>
+    <h1>Register</h1> 
     <form onsubmit="return validate(this)" method="POST">
         <div>
             <label for="email">Email</label>
