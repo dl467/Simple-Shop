@@ -1,17 +1,20 @@
 <?php
 require(__DIR__ . "/../../partials/nav.php");
 ?>
-<form onsubmit="return validate(this)" method="POST">
-    <div>
-        <label for="email">Username/Email</label>
-        <input type="text" name="email" required />
-    </div>
-    <div>
-        <label for="pw">Password</label>
-        <input type="password" id="pw" name="password" required minlength="8" />
-    </div>
-    <input type="submit" value="Login" />
-</form>
+<div class="container-fluid">
+    <h1>Login</h1>
+    <form onsubmit="return validate(this)" method="POST">
+        <div>
+            <label for="email">Username/Email</label>
+            <input type="text" name="email" required />
+        </div>
+        <div>
+            <label for="pw">Password</label>
+            <input type="password" id="pw" name="password" required minlength="8" />
+        </div>
+        <input type="submit" value="Login" />
+    </form>
+</div>
 <script>
     function validate(form) {
         //TODO 1: implement JavaScript validation
@@ -57,7 +60,9 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
     if (!$hasError) {
         //TODO 4
         $db = getDB();
-        $stmt = $db->prepare("SELECT id, email, username, password from Users where email = :email");
+
+        $stmt = $db->prepare("SELECT id, email, username, password from Users where email = :email OR username = :email");
+
         try {
             $r = $stmt->execute([":email" => $email]);
             if ($r) {
