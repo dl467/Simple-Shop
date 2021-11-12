@@ -5,7 +5,7 @@ function se($v, $k = null, $default = "", $isEcho = true)
 {
     if (is_array($v) && isset($k) && isset($v[$k])) {
         $returnValue = $v[$k];
-    } else if (is_object($v) && isset($k) && isset($v->$k)) {
+    } else if (is_object($v) && isset($k) && isset($v->$k)) { 
         $returnValue = $v->$k;
     } else {
         $returnValue = $v;
