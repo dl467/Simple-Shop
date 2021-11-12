@@ -31,12 +31,12 @@ Hello
 
         -  List of Evidence of Feature Completion
 
-            - Status: Pending (Completed, Partially working, Incomplete, Pending)
+            - Status: Completed
             
-            - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
+            - Direct Link: https://dl467-prod.herokuapp.com/Project/register.php
             
             - Pull Requests
-                - PR link #1 (repeat as necessary)
+                - PR link #1 
             
             - Screenshots
                 - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
