@@ -27,7 +27,7 @@ Hello
 
 - Milestone 1
 
-    - [ ] (mm/dd/yyyy of completion) User will be able to register a new account
+    - [x] (11/11/2021 of completion) User will be able to register a new account
 
         -  List of Evidence of Feature Completion
 
@@ -36,11 +36,27 @@ Hello
             - Direct Link: https://dl467-prod.herokuapp.com/Project/register.php
             
             - Pull Requests
-                - PR link #1 
+                - PR link #1 https://github.com/dl467/IT202-009/pull/79 
             
             - Screenshots
-                - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-                    - Screenshot #1 description explaining what you're trying to show
+                - Screenshot #1 <img width="701" alt="Screen Shot 2021-11-11 at 9 14 45 PM" src="https://user-images.githubusercontent.com/70830819/141397211-ca9ae04e-9143-4cf4-b890-c8764cc1a1a4.png"> 
+                    - Screenshot #1 Showing that the field forms must be followed to register. The flash color is usually red, but the inspect element method made it teal.
+
+                - Screenshot #2 <img width="910" alt="Screen Shot 2021-11-11 at 9 17 27 PM" src="https://user-images.githubusercontent.com/70830819/141397460-d985c694-6882-4e52-8c19-097624c8d46a.png"> 
+                    - Screenshot #2 Showing User table.
+                    
+                - Screenshot #3 <img width="910" alt="Screen Shot 2021-11-11 at 9 17 27 PM" src="https://user-images.githubusercontent.com/70830819/141397460-d985c694-6882-4e52-8c19-097624c8d46a.png">
+                    - Screenshot #3 Showing password is hashed.
+                    
+                - Screenshot #4 <img width="910" alt="Screen Shot 2021-11-11 at 9 19 23 PM" src="https://user-images.githubusercontent.com/70830819/141397677-2af8995e-e442-4583-ba3d-2e4b64dbcd31.png">
+                    - Showing Email must be unique.
+                    
+                - Screenshot #5 <img width="910" alt="Screen Shot 2021-11-11 at 9 20 40 PM" src="https://user-images.githubusercontent.com/70830819/141397791-0b1683ed-c303-4f83-bf3d-3fd0010c7e20.png">
+                    - Screenshot #5 Showing Username must be unique
+                    
+                - Screenshot #6 <img width="910" alt="Screen Shot 2021-11-11 at 9 19 23 PM" src="https://user-images.githubusercontent.com/70830819/141397677-2af8995e-e442-4583-ba3d-2e4b64dbcd31.png"> <img width="910" alt="Screen Shot 2021-11-11 at 9 20 40 PM" src="https://user-images.githubusercontent.com/70830819/141397791-0b1683ed-c303-4f83-bf3d-3fd0010c7e20.png">
+                    - Screenshot #6 Showing that when email and username are not cleared.
+                
 
     - [ ] (mm/dd/yyyy of completion) User will be able to login to their account (given they enter the correct credentials)
 
