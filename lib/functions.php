@@ -117,7 +117,7 @@ function users_check_duplicate($errorInfo)
             flash("<pre>" . var_export($errorInfo, true) . "</pre>");
         }
     } else {
-        //TODO come up with a nice error message
+        //TODO come up with a nice error message 
         flash("<pre>" . var_export($errorInfo, true) . "</pre>");
     }
 }
