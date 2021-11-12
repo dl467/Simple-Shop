@@ -102,65 +102,72 @@ Hello
                     - Screenshot #2 Showing that session is destroyed.
                     
 
-    - [ ] (mm/dd/yyyy of completion) Basic security rules implemented
+    - [x] (11/11/2021 of completion) Basic security rules implemented
 
         -  List of Evidence of Feature Completion
 
-            - Status: Pending (Completed, Partially working, Incomplete, Pending)
+            - Status: Completed
+            
+            - Direct Link: https://dl467-prod.herokuapp.com/Project/login.php
+            
+            - Pull Requests
+                - PR link #1 https://github.com/dl467/IT202-009/pull/81
+            
+            - Screenshots
+                - Screenshot #1 <img width="1046" alt="Screen Shot 2021-11-11 at 9 51 02 PM" src="https://user-images.githubusercontent.com/70830819/141400758-e36a5ef1-1957-436f-9528-fbb6ebe38f8a.png">
+                    - Screenshot #1 Showing users must be login to view home. This is a way to check if the user is logined in.
+                
+                - Screenshot #2 <img width="753" alt="Screen Shot 2021-11-11 at 10 11 30 PM" src="https://user-images.githubusercontent.com/70830819/141402662-905dccf7-96ee-4982-b768-774855d68d43.png">
+                    - Screenshot #2 Shows there's a role table.
+
+    - [x] (11/11/2021 of completion) Basic Roles implemented
+
+        -  List of Evidence of Feature Completion
+
+            - Status: Completed 
+            
+            - Direct Link: https://dl467-prod.herokuapp.com/Project/login.php
+            
+            - Pull Requests
+                - PR link #1 https://github.com/dl467/IT202-009/pull/81
+            
+            - Screenshots
+                - Screenshot #1 <img width="753" alt="Screen Shot 2021-11-11 at 10 11 30 PM" src="https://user-images.githubusercontent.com/70830819/141402662-905dccf7-96ee-4982-b768-774855d68d43.png">
+                    - Screenshot #1 Shows there's a role table.
+
+                - Screenshot #2 <img width="753" alt="Screen Shot 2021-11-11 at 10 08 06 PM" src="https://user-images.githubusercontent.com/70830819/141402372-a352b82f-cdb5-4bed-a557-6109e7d856b9.png">
+                    - Screenshot #2 Showing there is a User Role table.
+                
+
+    - [x] (11/11/2021 of completion) Site should have basic styles/theme applied; everything should be styled
+
+        -  List of Evidence of Feature Completion
+
+            - Status: Completed
+            
+            - Direct Link: https://dl467-dev.herokuapp.com/Project/login.php
+            
+            - Pull Requests
+                - PR link #1 https://github.com/dl467/IT202-009/pull/81 
+            
+            - Screenshots
+                - Screenshot #1 <img width="1438" alt="Screen Shot 2021-11-11 at 10 16 46 PM" src="https://user-images.githubusercontent.com/70830819/141403086-f5464d09-0d21-47f9-8fcc-4bb71a1165c5.png">
+                    - Screenshot #1 Showing there is basic CSS styling with the navbar, to the forms, and button.
+
+    - [x] (11/11/2021 of completion) Any output messages/errors should be “user friendly”
+
+        -  List of Evidence of Feature Completion
+
+            - Status: Completed 
             
             - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
             
             - Pull Requests
-                - PR link #1 (repeat as necessary)
+                - PR link #1 https://github.com/dl467/IT202-009/pull/81
             
             - Screenshots
-                - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-                    - Screenshot #1 description explaining what you're trying to show
-
-    - [ ] (mm/dd/yyyy of completion) Basic Roles implemented
-
-        -  List of Evidence of Feature Completion
-
-            - Status: Pending (Completed, Partially working, Incomplete, Pending)
-            
-            - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-            
-            - Pull Requests
-                - PR link #1 (repeat as necessary)
-            
-            - Screenshots
-                - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-                    - Screenshot #1 description explaining what you're trying to show
-
-    - [ ] (mm/dd/yyyy of completion) Site should have basic styles/theme applied; everything should be styled
-
-        -  List of Evidence of Feature Completion
-
-            - Status: Pending (Completed, Partially working, Incomplete, Pending)
-            
-            - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-            
-            - Pull Requests
-                - PR link #1 (repeat as necessary)
-            
-            - Screenshots
-                - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-                    - Screenshot #1 description explaining what you're trying to show
-
-    - [ ] (mm/dd/yyyy of completion) Any output messages/errors should be “user friendly”
-
-        -  List of Evidence of Feature Completion
-
-            - Status: Pending (Completed, Partially working, Incomplete, Pending)
-            
-            - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-            
-            - Pull Requests
-                - PR link #1 (repeat as necessary)
-            
-            - Screenshots
-                - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-                    - Screenshot #1 description explaining what you're trying to show
+                - Screenshot #1 <img width="910" alt="Screen Shot 2021-11-11 at 9 31 04 PM" src="https://user-images.githubusercontent.com/70830819/141398775-bae62b11-541c-451a-a63b-649de6696598.png"> <img width="910" alt="Screen Shot 2021-11-11 at 9 32 39 PM" src="https://user-images.githubusercontent.com/70830819/141398929-85d16619-84ef-48b6-929d-01fe2690ef8f.png"> <img width="1046" alt="Screen Shot 2021-11-11 at 9 51 02 PM" src="https://user-images.githubusercontent.com/70830819/141400758-e36a5ef1-1957-436f-9528-fbb6ebe38f8a.png">
+                    - Screenshot #1 Showing friendly messages/errors.
 
     - [ ] (mm/dd/yyyy of completion) User will be able to see their profile
 

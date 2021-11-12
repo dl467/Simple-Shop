@@ -109,7 +109,7 @@ $username = get_username();
         </div>
         <div class="mb-3">
             <label for="conp">Confirm Password</label>
-            <input type="password" name="confirmPassword" id="conp" />
+            <input type="password" name="confirmPassword" id="conp" /> 
         </div>
         <input type="submit" value="Update Profile" name="save" />
     </form>

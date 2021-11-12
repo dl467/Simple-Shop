@@ -18,7 +18,7 @@ if (($localWorks && $domain == "localhost") || $domain != "localhost") {
         "httponly" => true,
         "samesite" => "lax"
     ]);
-}
+} 
 session_start();
 require_once(__DIR__ . "/../lib/functions.php");
  
