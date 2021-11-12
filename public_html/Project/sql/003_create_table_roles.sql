@@ -6,5 +6,5 @@ CREATE TABLE IF NOT EXISTS  `Roles`
     `is_active`  TINYINT(1) default 1,
     `created`    timestamp default current_timestamp,
     `modified`   timestamp default current_timestamp on update current_timestamp,
-    PRIMARY KEY (`id`)
-)
+    PRIMARY KEY (`id`) 
+) 
