@@ -5,7 +5,7 @@ $email = se($_POST, "email", "", false);
 $username = se($_POST, "username", "", false);
 ?>
 <div class="container-fluid">
-    <h1>Register</h1>
+    <h1>Register</h1> 
     <form onsubmit="return validate(this)" method="POST">
         <div>
             <label for="email">Email</label>
@@ -32,7 +32,7 @@ $username = se($_POST, "username", "", false);
         //TODO 1: implement JavaScript validation
         //ensure it returns false for an error and true for success
 
-        return true;
+        return true; 
     }
 </script>
 <?php
@@ -41,8 +41,8 @@ if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm
     $email = se($_POST, "email", "", false);
     $password = se($_POST, "password", "", false);
     $confirm = se($_POST, "confirm", "", false);
-    $username = se($_POST, "username", "", false);
-    //TODO 3
+    $username = se($_POST, "username", "", false); 
+    //TODO 3 
 
 
     //$errors = [];

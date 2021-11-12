@@ -70,7 +70,7 @@ if (isset($_POST["username"])) {
 ?>
 <div class="container-fluid">
     <h1>Assign Roles</h1>
-    <form method="POST" class="row row-cols-lg-auto g-3 align-items-center">
+    <form method="POST" class="row row-cols-lg-auto g-3 align-items-center"> 
         <div class="input-group mb-3">
             <input class="form-control" type="search" name="username" placeholder="Username search" />
             <input class="btn btn-primary" type="submit" value="Search" />
