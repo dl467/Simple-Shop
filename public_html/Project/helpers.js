@@ -1,4 +1,4 @@
-function flash(message = "", color = "info") {
+function flash (message = "", color = "info") {
     let flash = document.getElementById("flash");
     //create a div (or whatever wrapper we want)
     let outerDiv = document.createElement("div");
@@ -13,4 +13,22 @@ function flash(message = "", color = "info") {
     outerDiv.appendChild(innerDiv);
     //add the element to the DOM (if we don't it merely exists in memory)
     flash.appendChild(outerDiv);
+    //added to clear out messages after a delay for ajax calls
+    //otherwise messages will continue to pile on and block/push content
+    setTimeout(() => {
+        console.log("removing");
+        flash.children[0].remove();
+
+    }, 3000);
+    //removeit(flash);
+}
+function removeit (flash) {
+    setTimeout(() => {
+        console.log("removing");
+        flash.children[0].remove();
+        if (flash.children.length > 0) {
+            removeit(flash);
+        }
+
+    }, 3000);
 }
