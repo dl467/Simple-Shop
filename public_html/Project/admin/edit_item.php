@@ -45,7 +45,7 @@ function mapColumn($col)
     <h1>Edit Item</h1>
     <form method="POST">
         <?php foreach ($result as $column => $value) : ?>
-            <?php /* Lazily ignoring fields via hardcoded array*/ ?>
+            <!-- Lazily ignoring fields via hardcoded array -->
             <?php if (!in_array($column, $ignore)) : ?>
                 <div class="mb-4">
                     <label class="form-label" for="<?php se($column); ?>"><?php se($column); ?></label>
@@ -56,3 +56,7 @@ function mapColumn($col)
         <input class="btn btn-primary" type="submit" value="Update" name="submit" />
     </form>
 </div>
+
+<?php
+require(__DIR__ . "/../../../partials/flash.php");
+?>
