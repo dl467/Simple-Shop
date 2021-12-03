@@ -49,7 +49,6 @@ if (isset($_GET["remove_item"])){
     } catch (PDOException $e) {
         error_log("Error removing item" . var_export($e->errorInfo, true));
     }
-    
 }
 
 if (isset($_GET["remove_all"])) {

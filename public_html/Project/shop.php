@@ -43,7 +43,7 @@ function get_categories(){
   }
 
 $category = se($_GET, "category_filter", "", false);
-  
+//apply category filter  
 if (!empty($category)) {
     $query .= " AND category = :category";
     $params[":category"] = $category;
