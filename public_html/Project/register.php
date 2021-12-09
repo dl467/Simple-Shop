@@ -1,5 +1,6 @@
 <?php
 require(__DIR__ . "/../../partials/nav.php");
+
 reset_session();
 $email = se($_POST, "email", "", false);
 $username = se($_POST, "username", "", false);

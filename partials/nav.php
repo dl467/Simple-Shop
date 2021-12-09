@@ -1,4 +1,5 @@
 <?php
+
 //Note: this is to resolve cookie issues with port numbers
 $domain = $_SERVER["HTTP_HOST"];
 if (strpos($domain, ":")) {
@@ -35,6 +36,7 @@ require_once(__DIR__ . "/../lib/functions.php");
                 <li><a href="<?php echo get_url('profile.php'); ?>">Profile</a></li>
                 <li><a href="<?php echo get_url('shop.php'); ?>">Shop</a></li>
                 <li><a href="<?php echo get_url('cart.php'); ?>">Cart</a></li>
+                <li><a href="<?php echo get_url('checkout.php'); ?>">Checkout</a></li>
             <?php endif; ?>
             <?php if (!is_logged_in()) : ?>
                 <li><a href="<?php echo get_url('login.php'); ?>">Login</a></li>
