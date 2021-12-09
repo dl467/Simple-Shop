@@ -3,7 +3,7 @@ require(__DIR__ . "/../../../partials/nav.php");
 
 if (!has_role("Admin")) {
     flash("You don't have permission to view this page", "warning");
-    die(header("Location: $BASE_PATH" . "home.php"));
+    redirect("home.php");
 }
 if (isset($_POST["submit"])) {
     $id = save_data("Products", $_POST);
@@ -31,6 +31,7 @@ $ignore = ["id", "modified", "created"];
         <input class="btn btn-primary" type="submit" value="Create" name="submit" />
     </form>
 </div>
+
 <?php
 require(__DIR__ . "/../../../partials/flash.php");
 ?>
