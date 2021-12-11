@@ -1,5 +1,5 @@
 <?php
-require(__DIR__ . "/../../partials/nav.php");
+require_once(__DIR__ . "/../../partials/nav.php");
 
 $results = [];
 $db = getDB();
@@ -43,7 +43,7 @@ function get_categories(){
   }
 
 $category = se($_GET, "category_filter", "", false);
-  
+//apply category filter  
 if (!empty($category)) {
     $query .= " AND category = :category";
     $params[":category"] = $category;
@@ -182,8 +182,6 @@ try {
                 </select>
 
                 <script>
-                    //quick fix to ensure proper value is selected since
-                    //value setting only works after the options are defined and php has the value set prior
                     document.forms[0].col.value = "<?php se($col); ?>";
                 </script>
                 <select class="form-control" name="order" value="<?php se($order); ?>">
@@ -191,8 +189,6 @@ try {
                     <option value="desc">Down</option>
                 </select>
                 <script>
-                    //quick fix to ensure proper value is selected since
-                    //value setting only works after the options are defined and php has the value set prior
                     document.forms[0].order.value = "<?php se($order); ?>";
                 </script>
             </div>
@@ -241,5 +237,5 @@ try {
 </div>
 
 <?php
-require(__DIR__ . "/../../partials/flash.php");
+require_once(__DIR__ . "/../../partials/flash.php");
 ?>

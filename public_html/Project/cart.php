@@ -1,8 +1,9 @@
 <?php
-require(__DIR__ . "/../../partials/nav.php");
+require_once(__DIR__ . "/../../partials/nav.php");
+
 if(!is_logged_in()){
     flash("You must login to view Cart", "warning");
-    die(header("Location: login.php"));
+    redirect("login.php");
 }
 
 if (isset($_POST["cart_id"])) {
@@ -38,9 +39,9 @@ if (isset($_GET["total"])) {
 }
 */
 
-if (isset($_GET["remove_item"])){
+if (isset($_POST["remove_item"])){
     $db = getDB();
-    $item_id = se($_GET, "remove_item", -1, false);
+    $item_id = se($_POST, "remove_item", -1, false);
     $stmt = $db->prepare("DELETE FROM Cart WHERE product_id = :id AND user_id = :uid");
     try {
         $stmt->execute([":id" => $item_id, ":uid" => get_user_id()]);
@@ -49,12 +50,11 @@ if (isset($_GET["remove_item"])){
     } catch (PDOException $e) {
         error_log("Error removing item" . var_export($e->errorInfo, true));
     }
-    
 }
 
-if (isset($_GET["remove_all"])) {
+if (isset($_POST["remove_all"])) {
     $db = getDB();
-    $item_id = se($_GET, "remove_item", -1, false);
+    $item_id = se($_POST, "remove_item", -1, false);
     $stmt = $db->prepare("DELETE FROM Cart WHERE user_id = :uid");
     try{
         $stmt->execute([":uid" => get_user_id()]);
@@ -94,7 +94,7 @@ try {
 ?>
 
 <div class="container-fluid">
-    <h5>Cart</h5>
+    <h1>Cart</h1>
     <br>
         <div class="row">
         <?php foreach ($results as $r) : //echo("<pre>" . var_export($r, true) . "</pre>"); ?>
@@ -128,7 +128,7 @@ try {
                     <div class="card-footer">
                     <div class="card-text">Subtotal: $<?php se($r, "subtotal"); ?> </div>
                     
-                    <form method="GET">
+                    <form method="POST">
                         <input type="hidden" name="remove_item" value="<?php se($r, 'id'); ?>"/>
                         <input class="btn btn-primary" type="submit" value="Remove"/>
                     </form>   
@@ -144,14 +144,17 @@ try {
             <div class="card-body"type="number" name="total" style="font-size: 20px;">Total Cost: $<?php echo $total;?></div>
         </div>
         <div class="col">
-            <form method="GET">
+            <form method="POST">
                 <input type="hidden" name="remove_all" value="<?php se($r, 'id'); ?>"/>
                 <input class="btn btn-primary" type="submit" style="font-size: 20px;" value="Remove all items"/>
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                <a style="font-size: 20px;" href="<?php echo get_url('checkout.php'); ?>">Proceed to Checkout</a>
             </form>
         </div>
     </div>
 <br><br>
 </div>
+
 <?php
-require(__DIR__ . "/../../partials/flash.php");
+require_once(__DIR__ . "/../../partials/flash.php");
 ?>

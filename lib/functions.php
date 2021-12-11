@@ -77,6 +77,7 @@ function get_user_id()
     }
     return false;
 }
+
 //TODO 4: Flash Message Helpers
 function flash($msg = "", $color = "info")
 {
@@ -225,24 +226,25 @@ function update_data($table, $id,  $data, $ignore = ["id", "submit"])
         return false;
     }
 }
-/*
-function record_purchase($item_id, $user_id, $quantity, $cost)
+
+function purchase($user_id, $total_price, $payment_method, $address)
 {
-    if ($item_id <= 0 ||$user_id <= 0 || $quantity === 0) {
-        error_log("record_purchase() Item ID: $item_id, User_id: $user_id, Quantity $quantity");
+    if ($total_price <= 0 ||$user_id <= 0) {
+        error_log("record_purchase() User_id: $user_id, Address $address");
         return;
     }
     $db = getDB();
-    $stmt = $db->prepare("INSERT INTO Cart (product_id, user_id, quantity, unit_cost) VALUES (:iid, :uid, :q, :uc)");
+    $stmt = $db->prepare("INSERT INTO Orders (user_id, total_price, payment_method, address) VALUES (:uid, :tp, :pm, :ad)");
     try {
-        $stmt->execute([":iid" => $item_id, ":uid" => $user_id, ":q" => $quantity, ":uc" => $cost]);
-        return true;
+        $stmt->execute([":uid" => $user_id, ":tp" => $total_price, ":pm" => $payment_method, ":ad" => $address]);
+        return $db->lastInsertId();
     } catch (PDOException $e) {
-        error_log("Error recording purchase $quantity of $item_id for user $user_id: " . var_export($e->errorInfo, true));
+        error_log("Error recording purchase for user $user_id: with address $address" . var_export($e->errorInfo, true));
     }
     return false;
 }
-*/
+
+
 function add_item($item_id, $user_id, $quantity, $cost)
 {
     error_log("add_item() Item ID: $item_id, User_id: $user_id, Quantity $quantity");
