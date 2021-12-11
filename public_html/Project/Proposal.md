@@ -257,67 +257,277 @@ Hello
 
 
 
-- Milestone 3
+<table>
+<tr><td>milestone 3</td></tr><tr><td>
+<table>
+<tr><td>F1 - User will be able to purchase items in their Cart (2021-12-10)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
 
-    - [ ] (mm/dd/yyyy of completion) User will be able to purchase items in their Cart
-        
-        -  List of Evidence of Feature Completion
-           
-            - Status: Pending (Completed, Partially working, Incomplete, Pending)
-           
-            - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-            
-            - Pull Requests
-                - PR link #1 (repeat as necessary)
-            
-            - Screenshots
-                - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-                    - Screenshot #1 description explaining what you're trying to show
+ [https://dl467-prod.herokuapp.com/Project/login.php](https://dl467-prod.herokuapp.com/Project/login.php)</p></td></tr>
+<tr><td>PRs:<p>
 
-    - [ ] (mm/dd/yyyy of completion) Order Confirmation Page
-        
-        -  List of Evidence of Feature Completion
-           
-            - Status: Pending (Completed, Partially working, Incomplete, Pending)
-           
-            - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-            
-            - Pull Requests
-                - PR link #1 (repeat as necessary)
-            
-            - Screenshots
-                - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-                    - Screenshot #1 description explaining what you're trying to show
+ [https://github.com/dl467/IT202-009/pull/131](https://github.com/dl467/IT202-009/pull/131)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F1 - Create an Orders table (id, user_id, created, total_price, address, payment_method)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
-    - [ ] (mm/dd/yyyy of completion) User will be able to see their Purchase History
-        
-        -  List of Evidence of Feature Completion
-           
-            - Status: Pending (Completed, Partially working, Incomplete, Pending)
-           
-            - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-            
-            - Pull Requests
-                - PR link #1 (repeat as necessary)
-            
-            - Screenshots
-                - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-                    - Screenshot #1 description explaining what you're trying to show
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145658296-3f802415-e290-4cc9-81f4-75a3dd202d87.png">
+<p>Showing the table Orders is created </p>
+</td></tr>
 
-    - [ ] (mm/dd/yyyy of completion) Store Owner will be able to see all Purchase History
-        
-        -  List of Evidence of Feature Completion
-           
-            - Status: Pending (Completed, Partially working, Incomplete, Pending)
-           
-            - Direct Link: (Direct link to the file or files in heroku prod for quick testing (even if it's a protected page))
-            
-            - Pull Requests
-                - PR link #1 (repeat as necessary)
-            
-            - Screenshots
-                - Screenshot #1 (paste the image so it uploads to github) (repeat as necessary)
-                    - Screenshot #1 description explaining what you're trying to show
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F1 - Create an OrderItems table (id, order_id, product_id, quantity, unit_price)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145658365-beeccbd5-76a8-4203-a222-f218a811c249.png">
+<p>Showing OrderItems table is created</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F1 - Checkout Form</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145661103-4f640baa-18fa-4945-a332-f7011f75fe19.png">
+<p>Showing at there is a checkout form that asks for payment method and a numerical value (Confirm Total) is asked for.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F1 - User will be asked for their Address for shipping purposes</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145661103-4f640baa-18fa-4945-a332-f7011f75fe19.png">
+<p>Showing that address is asked for and is validated.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F1 - Order process:</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145661383-6a7b0db2-9a88-4ac5-985d-a3a2eb4ea28f.png">
+<p>Showing price before change</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145661405-974d0cce-7e26-41b6-9def-c061f4606e5d.png">
+<p>Showing price after change</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145661503-55c0cbd6-8767-46cd-a38f-bc4cde0a8cd2.png">
+<p>Showing stock of desired item</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145661551-bad11b23-0766-4434-99b8-07d1d93ed3e4.png">
+<p>Showing flash message of what item is unavailable and the actual stock of the item.</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145661635-ff1e7798-6921-488c-80fa-c1aec4c354b0.png">
+<p>Showing that its prevented from purchasing the item</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145661708-4d59498e-736c-468c-bd96-8b066fcfeba1.png">
+<p>Showing stock of item before purchase</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145661759-d5d921f2-91f5-463c-9e68-9e8f85adfc63.png">
+<p>Showing the purchase of the item</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145661778-8c04f4de-6168-4347-a98c-f25c0b8e3a1f.png">
+<p>Showing stock is deducted after purchasing item</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145661798-49fe48ab-5fd9-403f-91c4-f6fd6fe5b07b.png">
+<p>Showing that cart is cleared out after a purchase</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F2 - Order Confirmation Page (2021-12-10)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://dl467-prod.herokuapp.com/Project/login.php](https://dl467-prod.herokuapp.com/Project/login.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/dl467/IT202-009/pull/131](https://github.com/dl467/IT202-009/pull/131)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F2 - Show the entire order details from the Order and OrderItems table (similar to cart)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145661821-b0ce1754-6b0f-44f3-ab30-1f24c0c0804b.png">
+<p>Showing that confirmation page shows entire detail of order and orderitems and displays thank you message</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F3 - User will be able to see their Purchase History (2021-12-10)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://dl467-prod.herokuapp.com/Project/login.php](https://dl467-prod.herokuapp.com/Project/login.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/dl467/IT202-009/pull/131](https://github.com/dl467/IT202-009/pull/131)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F3 - For now limit to 10 most recent orders</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145661966-325ffa21-b48d-49a7-9532-64391dfe155e.png">
+<p>Showing that the purchase history is limited to only 10 most recent purchases</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F3 - A list item can be clicked to view the full details in the Order Details Page (similar to Order Confirmation Page except no “Thank you” message)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145662021-7856f820-b410-44af-bcbc-c158828f4829.png">
+<p>Showing a list of past orders are shown </p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145662268-95b9d98d-2cd6-4cd6-8f80-50b86da87962.png">
+<p>Showing that you can view full detail of a selected past order</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F4 - Store Owner will be able to see all Purchase History (2021-12-10)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://dl467-prod.herokuapp.com/Project/login.php](https://dl467-prod.herokuapp.com/Project/login.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/dl467/IT202-009/pull/131](https://github.com/dl467/IT202-009/pull/131)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F4 - For now limit to 10 most recent orders</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145662461-2ed1ccdf-8b90-49b6-8369-a8cbf256cd8e.png">
+<p>Showing that admin view is also limited to 10 most recent</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - A list item can be clicked to view the full details in the Order Details Page (similar to Order Confirmation Page except no “Thank you” message)</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145662507-5f023c42-91ed-40be-892c-bae22fcce9de.png">
+<p>Showing there is list of past orders</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145662515-b0f3f948-0891-4ef5-a5d4-319e1d6c275d.png">
+<p>Showing detail view of an order</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - Store Owner will be able to see all Purchase History</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145662547-d7bfa23c-fdb9-482a-ae63-4d39fb20548b.png">
+<p>Showing admin view of past orders. Shows all orders</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/145662554-f20f0f2c-4473-4d29-8b97-509b901555db.png">
+<p>Showing non-admin user. Only shows their past orders.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr></td></tr></table>
+
+
 
 - 
 <table>
