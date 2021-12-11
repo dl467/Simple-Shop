@@ -1,6 +1,12 @@
 <?php
 require(__DIR__ . "/../../partials/nav.php");
 
+if(!is_logged_in()){
+    flash("You must login to view orders", "warning");
+    redirect("login.php");
+}
+
+
 $id = se($_GET, "id", -1, false);
 $db = getDB();
 $stmt = $db->prepare("SELECT product_id, quantity, unit_price FROM OrderItems WHERE order_id=:oi");
