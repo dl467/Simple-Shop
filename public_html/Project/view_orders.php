@@ -27,9 +27,8 @@ foreach($order_item_products as $s){
 
 
 <div class="container-fluid">
-    <h1>Confirmation Page</h1>
+    <h1>View Order</h1>
     <br>
-    <h3 style="text-align:center">Thank You For Your Purchase</h3>
     <h5>Ordered Items</h5>
     <table class="table">
         <?php foreach ($order_item_products as $index => $record) : //echo("<pre>" . var_export($record, true) . "</pre>");?>
