@@ -19,7 +19,7 @@ function flash (message = "", color = "info") {
         console.log("removing");
         flash.children[0].remove();
 
-    }, 1500);
+    }, 2500);
     //removeit(flash);
 }
 function removeit (flash) {

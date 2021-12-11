@@ -77,6 +77,7 @@ function get_user_id()
     }
     return false;
 }
+
 //TODO 4: Flash Message Helpers
 function flash($msg = "", $color = "info")
 {
