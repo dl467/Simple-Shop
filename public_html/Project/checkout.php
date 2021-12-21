@@ -2,6 +2,11 @@
 require_once(__DIR__ . "/../../partials/nav.php");
 require_once(__DIR__ . "/../../lib/functions.php");
 
+if(!is_logged_in()){
+    flash("You must login to view Checkout", "warning");
+    redirect("login.php");
+}
+
 $db = getDB();
 $results = [];
 
@@ -31,40 +36,82 @@ try {
 }
 
 
-if (isset($_POST["purchase"])) {
-    $address = se($_POST, "street", "", false) . ", " . se($_POST, "city", "", false) . ", " . se($_POST, "zip", "", false) . ", " . se($_POST, "state", "", false);
-    $payment_method = se($_POST, "paymentMethod", "", false);
-    $total_price = se($_POST, "totalPrice", "", false);
+$count = count($results);
+foreach($results as $r){
+    //echo "<pre>" . var_export(count($results)).  "</pre>";
+    $db = getDB();
+    $stmt = $db->prepare("SELECT stock FROM Products WHERE id=:id");
+        try{
+            $stmt->execute([":id"=>se($r, "id", 0, false)]);
+            $m = $stmt->fetch(PDO::FETCH_ASSOC);
+            //echo "<pre>" . var_export($m, true).  "</pre>";
+        } catch (PDOException $e) {
+            error_log("Error finding stock amount from products" . var_export($e->errorInfo, true));
+        }
+        
+        //echo "<pre>" . var_export(se($r, "quantity", 0, false)).  "</pre>";
+    $q = (int)se($r, "quantity", 0, false);
+    $s = (int)se($m, "stock", 0, false);
+
+    if($q <= $s) {
+        $count--;
+    } else{
+        flash("Quantity of " . se($r, "name", "", false) . " exceeds the stock OF " . $s , "warning");
+    }
+
+}
+
+
+if (isset($_POST["purchase"]) && $count==0 ) {
+    $address = se($_POST, "street", null, false) . ", " . se($_POST, "city", null, false) . ", " . se($_POST, "zip", null, false) . ", " . se($_POST, "state", null, false);
+    $payment_method = se($_POST, "paymentMethod", null, false);
+    $total_price = se($_POST, "totalPrice", null, false);
+    $_SESSION["total"] = $total_price;
     $user_id = get_user_id();
 
-   if ($total_price == $total && isset($address) && isset($payment_method)){
-        $order_id = purchase($user_id, $total_price, $payment_method, $address);
-        flash("Purchase Cart Complete", "success");
-        
-        $db = getDB();
-        $stmt = $db->prepare("INSERT INTO OrderItems(order_id, product_id, quantity, unit_price) SELECT :order_id, product_id, quantity, unit_cost FROM Cart WHERE user_id = :uid");
-        try{
-            $stmt->execute([":order_id" => $order_id, ":uid" => get_user_id()]);
-        } catch (PDOException $e) {
-            error_log("Error adding items to OrderItems" . var_export($e->errorInfo, true));
-        }    
 
-        /*
-        $db2 = getDB();
-        $stmt2 = $db2->prepare("DELETE FROM Cart WHERE user_id = :uid");
-        try{
-        $stmt2->execute([":uid" => get_user_id()]);
-        } catch (PDOException $e) {
-        error_log("Error deleting cart from checkout" . var_export($e->errorInfo, true));
-        }    
-        */
+        if ($total_price == $total && $address!=null && $payment_method!=null){
+            
+            foreach($results as $r){
+                $id = se($r, "id", 0, false);
+                $quantity = se($r, "quantity", 0, false);
 
-    //redirect("confirm.php");
-    }
-   else{
-        flash("Missing Inputs or Confirm Total does not match total cost", "warning");
-   }
+                $db = getDB();
+                $stmt = $db->prepare("UPDATE Products SET stock=(stock-:st) WHERE id=:id");
+                    try{
+                        $stmt->execute([":id"=> $id, ":st"=> $quantity]);
+                    } catch (PDOException $e) {
+                        error_log("Error updating stock" . var_export($e->errorInfo, true));
+                    }
+            }
 
+                $order_id = purchase($user_id, $total_price, $payment_method, $address);
+                flash("Purchase Cart Complete", "success");
+                
+                $db = getDB();
+                $stmt = $db->prepare("INSERT INTO OrderItems(order_id, product_id, quantity, unit_price) SELECT :order_id, product_id, quantity, unit_cost FROM Cart WHERE user_id = :uid");
+                try{
+                    $stmt->execute([":order_id" => $order_id, ":uid" => get_user_id()]);
+                } catch (PDOException $e) {
+                    error_log("Error adding items to OrderItems" . var_export($e->errorInfo, true));
+                }    
+            
+
+                
+                $db2 = getDB();
+                $stmt2 = $db2->prepare("DELETE FROM Cart WHERE user_id = :uid");
+                try{
+                $stmt2->execute([":uid" => get_user_id()]);
+                } catch (PDOException $e) {
+                error_log("Error deleting cart from checkout" . var_export($e->errorInfo, true));
+                }    
+                
+
+            redirect("confirm.php");
+            }
+        else{
+                flash("Missing Inputs or Confirm Total does not match total cost", "warning");
+        }
 }
 
 
@@ -81,7 +128,7 @@ if (isset($_POST["purchase"])) {
         <?php foreach ($results as $index => $record) : //echo("<pre>" . var_export($record, true) . "</pre>");?>
                 <?php if ($index == 0) : ?>
                     <thead style="text-align:center">
-                        <?php foreach ($record as $column => $value) : //echo("<pre>" . var_export($column, true) . "</pre>");?>
+                        <?php foreach ($record as $column => $value) : //echo("<pre>" . var_export($value, true) . "</pre>");?>
                             <th><?php se($column); ?></th>
                         <?php endforeach; ?>
                     </thead>
