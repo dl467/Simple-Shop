@@ -203,7 +203,7 @@ Hello
                     - Screenshot #2 Showing other validations are checked as well.
 
                 - Screenshot #3 <img width="1438" alt="Screen Shot 2021-11-11 at 10 37 27 PM" src="https://user-images.githubusercontent.com/70830819/141404888-12469e82-a6fd-4b59-a759-afff74fee52d.png">
-                    - Screenshot #3 Showing password is able to reset with correct information.
+                    - Screenshot #3 Showing password is able to reset with correct information. 
                 
                     
 
@@ -528,24 +528,33 @@ Hello
 </tr></td></tr></table>
 
 
+ 
 
-- 
 <table>
 <tr><td>milestone 4</td></tr><tr><td>
 <table>
-<tr><td>F1 - User can set their profile to be public or private (will need another column in Users table) ()</td></tr>
-<tr><td>Status: pending</td></tr>
-<tr><td>Links:</td></tr>
-<tr><td>PRs:</td></tr>
+<tr><td>F1 - User can set their profile to be public or private (will need another column in Users table) (2021-12-22)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://dl467-prod.herokuapp.com/Project/profile.php](https://dl467-prod.herokuapp.com/Project/profile.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/dl467/IT202-009/pull/145](https://github.com/dl467/IT202-009/pull/145)</p></td></tr>
 <tr><td>
 <table>
-<tr><td>F1 - If public, hide email address from other users</td></tr>
+<tr><td>F1 - If public, hide email address from other users  </td></tr>
 <tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
 <tr><td>
-<img width="768px" src="">
-<p></p>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147152904-c6addbfb-1619-4617-bde8-e10d85993625.png">
+<p>Showing option for user to choose public or private.</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147152960-6f6e5072-5222-454f-bbee-9f74292cf9ea.png">
+<p>Showing the output after updating user to public.</p>
 </td></tr>
 
 </td>
@@ -554,51 +563,23 @@ Hello
 </td>
 </tr>
 <table>
-<tr><td>F2 - User will be able to rate a product they purchased ()</td></tr>
-<tr><td>Status: pending</td></tr>
-<tr><td>Links:</td></tr>
-<tr><td>PRs:</td></tr>
+<tr><td>F2 - User will be able to rate a product they purchased     (2021-12-22)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://dl467-prod.herokuapp.com/Project/product_info.php?id=4](https://dl467-prod.herokuapp.com/Project/product_info.php?id=4)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/dl467/IT202-009/pull/145](https://github.com/dl467/IT202-009/pull/145)</p></td></tr>
 <tr><td>
 <table>
-<tr><td>F2 - Create table called Ratings (id, product_id, user_id, rating, comment, created)</td></tr>
+<tr><td>F2 - Create table called Ratings (id, product_id, user_id, rating, comment, created) </td></tr>
 <tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
 <tr><td>
-<img width="768px" src="">
-<p></p>
-</td></tr>
-
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr><td>
-<table>
-<tr><td>F2 - 1-5 rating</td></tr>
-<tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
-
-<tr><td>
-<img width="768px" src="">
-<p></p>
-</td></tr>
-
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr><td>
-<table>
-<tr><td>F2 - Text Comment (use TEXT data type in sql)</td></tr>
-<tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
-
-<tr><td>
-<img width="768px" src="">
-<p></p>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147153296-6b9956b3-b573-4148-84e8-6196e365f552.png">
+<p>Showing table called ratings was created</p>
 </td></tr>
 
 </td>
@@ -608,13 +589,18 @@ Hello
 </tr>
 <tr><td>
 <table>
-<tr><td>F2 - Must be done on the Product Details Page</td></tr>
+<tr><td>F2 - 1-5 rating  </td></tr>
 <tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
 <tr><td>
-<img width="768px" src="">
-<p></p>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147153473-f9ccb80b-1dcc-4fb5-9568-7bf355859f48.png">
+<p>Showing check between 1 and 5, makes it so that numbers can only be 1 through 5</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147153473-f9ccb80b-1dcc-4fb5-9568-7bf355859f48.png">
+<p>Showing 1-5 limits are implemented on html as well.</p>
 </td></tr>
 
 </td>
@@ -624,13 +610,13 @@ Hello
 </tr>
 <tr><td>
 <table>
-<tr><td>F2 - Ratings and Rating Comments will be visible on the Product Details page (Show the latest 10 reviews) (Paginate anything beyond 10)</td></tr>
+<tr><td>F2 - Text Comment (use TEXT data type in sql)    </td></tr>
 <tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
 <tr><td>
-<img width="768px" src="">
-<p></p>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147153473-f9ccb80b-1dcc-4fb5-9568-7bf355859f48.png">
+<p>Showing comments are text type.</p>
 </td></tr>
 
 </td>
@@ -640,34 +626,13 @@ Hello
 </tr>
 <tr><td>
 <table>
-<tr><td>F2 - Show the average rating on the Product Details Page</td></tr>
+<tr><td>F2 - Ratings and Rating Comments will be visible on the Product Details page</td></tr>
 <tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
 <tr><td>
-<img width="768px" src="">
-<p></p>
-</td></tr>
-
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<table>
-<tr><td>F3 - User’s Purchase History Changes ()</td></tr>
-<tr><td>Status: pending</td></tr>
-<tr><td>Links:</td></tr>
-<tr><td>PRs:</td></tr>
-<tr><td>
-<table>
-<tr><td>F3 - Filter by date range</td></tr>
-<tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
-
-<tr><td>
-<img width="768px" src="">
-<p></p>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147155488-58cba127-2a42-4783-a505-d99cef17ed11.png">
+<p>Showing that ratings and comments are shown on the product detail page.</p>
 </td></tr>
 
 </td>
@@ -677,13 +642,43 @@ Hello
 </tr>
 <tr><td>
 <table>
-<tr><td>F3 - Filter by category</td></tr>
+<tr><td>F2 - Show the average rating on the Product Details Page    </td></tr>
 <tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
 <tr><td>
-<img width="768px" src="">
-<p></p>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147155488-58cba127-2a42-4783-a505-d99cef17ed11.png">
+<p>Showing that the average rating is shown on the product detail page.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<table>
+<tr><td>F3 - User’s Purchase History Changes       (2021-12-22)</td></tr>
+<tr><td>Status: incomplete</td></tr>
+<tr><td>Links:<p>
+
+ [https://dl467-prod.herokuapp.com/Project/purchase_history.php](https://dl467-prod.herokuapp.com/Project/purchase_history.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/dl467/IT202-009/pull/145](https://github.com/dl467/IT202-009/pull/145)</p></td></tr>
+<tr><td>
+<table>
+<tr><td>F3 - Filter by date range     </td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/ff0000/000000?text=incomplete"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147155787-49d4b203-a76f-4a79-a668-24fd5f175a25.png">
+<p>Showing that filtering by date range is incomplete, however, that there was an attempt. </p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147155932-356639a2-c5e6-4f42-a69d-8f382c4708af.png">
+<p>I was able to create the column and everything but struggled when calling the params and setting the query. For the filter to completely work the query has to be called once but I could not figure out how to combine all the different querys and params to accurately call the right data.</p>
 </td></tr>
 
 </td>
@@ -693,13 +688,13 @@ Hello
 </tr>
 <tr><td>
 <table>
-<tr><td>F3 - Sort by total, date purchased, etc</td></tr>
+<tr><td>F3 - Sort by total, date purchased, etc  </td></tr>
 <tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+<img width="100" height="20" src="https://via.placeholder.com/400x120/ff0000/000000?text=incomplete"></td></tr>
 
 <tr><td>
-<img width="768px" src="">
-<p></p>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147155787-49d4b203-a76f-4a79-a668-24fd5f175a25.png">
+<p>Showing that there was an attempt,  however, could not be completed. I couldn't figure out how to call the queries all at once while getting the correct data. My biggest roadblock was time management. I didn't give myself enough time to completely wrap up the project. However I plan to work on it even after the semester to perfect the website.</p>
 </td></tr>
 
 </td>
@@ -709,13 +704,13 @@ Hello
 </tr>
 <tr><td>
 <table>
-<tr><td>F3 - Add pagination (Any filter/sort applied must be followed during the pagination process)</td></tr>
+<tr><td>F3 - Add pagination</td></tr>
 <tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
 <tr><td>
-<img width="768px" src="">
-<p></p>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147156842-c55813a4-94e5-4cf4-97e1-c3cf6b9a84e0.png">
+<p>Showing that the pagination is in play.</p>
 </td></tr>
 
 </td>
@@ -724,83 +719,71 @@ Hello
 </td>
 </tr>
 <table>
-<tr><td>F4 - Store Owner Purchase History Changes ()</td></tr>
-<tr><td>Status: pending</td></tr>
-<tr><td>Links:</td></tr>
-<tr><td>PRs:</td></tr>
-<tr><td>
-<table>
-<tr><td>F4 - Filter by Date Range</td></tr>
-<tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+<tr><td>F4 - Store Owner Purchase History Changes      (2021-12-22)</td></tr>
+<tr><td>Status: incomplete</td></tr>
+<tr><td>Links:<p>
 
-<tr><td>
-<img width="768px" src="">
-<p></p>
-</td></tr>
+ [https://dl467-prod.herokuapp.com/Project/purchase_history.php](https://dl467-prod.herokuapp.com/Project/purchase_history.php)</p></td></tr>
+<tr><td>PRs:<p>
 
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr><td>
-<table>
-<tr><td>F4 - Filter by Category</td></tr>
-<tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
-
-<tr><td>
-<img width="768px" src="">
-<p></p>
-</td></tr>
-
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr><td>
-<table>
-<tr><td>F4 - Sort by total, date purchased, etc</td></tr>
-<tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
-
-<tr><td>
-<img width="768px" src="">
-<p></p>
-</td></tr>
-
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr><td>
-<table>
-<tr><td>F4 - Add pagination (Any filter/sort applied must be followed during the pagination process)</td></tr>
-<tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
-
-<tr><td>
-<img width="768px" src="">
-<p></p>
-</td></tr>
-
-</td>
-</tr>
-</table>
-</td>
-</tr>
+ [https://github.com/dl467/IT202-009/pull/145](https://github.com/dl467/IT202-009/pull/145)</p></td></tr>
 <tr><td>
 <table>
 <tr><td>F4 - The result page should show the accurate total price of the combined search results (i.e., if just 3 records show each of $25, it should show $75 total for this view)</td></tr>
 <tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
 <tr><td>
-<img width="768px" src="">
-<p></p>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147156997-1e085106-6b7b-4e21-b477-f93a780e0ab4.png">
+<p>Showing that total price of purchases are correctly posted.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - Filter by date range     </td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/ff0000/000000?text=incomplete"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147155787-49d4b203-a76f-4a79-a668-24fd5f175a25.png">
+<p>I was able to create the column and everything but struggled when calling the params and setting the query. For the filter to completely work the query has to be called once but I could not figure out how to combine all the different querys and params to accurately call the right data.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - Sort by total, date purchased, etc  </td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/ff0000/000000?text=incomplete"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147155787-49d4b203-a76f-4a79-a668-24fd5f175a25.png">
+<p>Showing that there was an attempt,  however, could not be completed. I couldn't figure out how to call the queries all at once while getting the correct data. My biggest roadblock was time management. I didn't give myself enough time to completely wrap up the project. However I plan to work on it even after the semester to perfect the website.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F4 - Add pagination</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147156842-c55813a4-94e5-4cf4-97e1-c3cf6b9a84e0.png">
+<p>Showing that the pagination is in play.</p>
 </td></tr>
 
 </td>
@@ -809,19 +792,23 @@ Hello
 </td>
 </tr>
 <table>
-<tr><td>F5 - Add pagination to Shop Page (and any other product lists not yet mentioned) ()</td></tr>
-<tr><td>Status: pending</td></tr>
-<tr><td>Links:</td></tr>
-<tr><td>PRs:</td></tr>
+<tr><td>F5 - Add pagination to Shop Page (and any other product lists not yet mentioned) (2021-12-22)</td></tr>
+<tr><td>Status: complete</td></tr>
+<tr><td>Links:<p>
+
+ [https://dl467-prod.herokuapp.com/Project/shop.php](https://dl467-prod.herokuapp.com/Project/shop.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/dl467/IT202-009/pull/145](https://github.com/dl467/IT202-009/pull/145)</p></td></tr>
 <tr><td>
 <table>
 <tr><td>F5 - Add pagination to Shop Page (and any other product lists not yet mentioned)</td></tr>
 <tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
 <tr><td>
-<img width="768px" src="">
-<p></p>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147157255-81f6ccee-75e3-4c24-b854-9189f17184f1.png">
+<p>Showing that pagination is in play</p>
 </td></tr>
 
 </td>
@@ -830,51 +817,23 @@ Hello
 </td>
 </tr>
 <table>
-<tr><td>F6 - Store Owner will be able to see all products out of stock ()</td></tr>
-<tr><td>Status: pending</td></tr>
-<tr><td>Links:</td></tr>
-<tr><td>PRs:</td></tr>
+<tr><td>F6 - Store Owner will be able to see all products out of stock (2021-12-22)</td></tr>
+<tr><td>Status: incomplete</td></tr>
+<tr><td>Links:<p>
+
+ [https://dl467-prod.herokuapp.com/Project/admin/list_items.php](https://dl467-prod.herokuapp.com/Project/admin/list_items.php)</p></td></tr>
+<tr><td>PRs:<p>
+
+ [https://github.com/dl467/IT202-009/pull/145](https://github.com/dl467/IT202-009/pull/145)</p></td></tr>
 <tr><td>
 <table>
-<tr><td>F6 - This will be added as a filter to their product list page from Milestone 2</td></tr>
+<tr><td>F6 - This will be added as a filter to their product list page from Milestone 2;  Pagination should account for this new filter;  Recommended to have the filter applied as a given value (i.e., where quantity is <= value)</td></tr>
 <tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+<img width="100" height="20" src="https://via.placeholder.com/400x120/ff0000/000000?text=incomplete"></td></tr>
 
 <tr><td>
-<img width="768px" src="">
-<p></p>
-</td></tr>
-
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr><td>
-<table>
-<tr><td>F6 - Pagination should account for this new filter</td></tr>
-<tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
-
-<tr><td>
-<img width="768px" src="">
-<p></p>
-</td></tr>
-
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr><td>
-<table>
-<tr><td>F6 - Recommended to have the filter applied as a given value (i.e., where quantity is <= value)</td></tr>
-<tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
-
-<tr><td>
-<img width="768px" src="">
-<p></p>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147157417-615fae08-baa2-4e81-bae6-07fe2708eb74.png">
+<p>Showing that out of stock items are listed, however a filter was not needed.</p>
 </td></tr>
 
 </td>
@@ -883,19 +842,40 @@ Hello
 </td>
 </tr>
 <table>
-<tr><td>F7 - User can sort products by average rating on the Shop Page ()</td></tr>
-<tr><td>Status: pending</td></tr>
+<tr><td>F7 - User can sort products by average rating on the Shop Page (2021-12-22)</td></tr>
+<tr><td>Status: incomplete</td></tr>
 <tr><td>Links:</td></tr>
 <tr><td>PRs:</td></tr>
 <tr><td>
 <table>
 <tr><td>F7 - Hint: may want to add an “average rating” field to the Products table and update this value any time a new rating is given for the product</td></tr>
 <tr><td>Status: 
-<img width="100" height="20" src="https://via.placeholder.com/400x120/808080/ffffff?text=pending"></td></tr>
+<img width="100" height="20" src="https://via.placeholder.com/400x120/009955/fff?text=completed"></td></tr>
 
 <tr><td>
-<img width="768px" src="">
-<p></p>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147157759-195a8c6c-66bc-48db-8f46-997f4466a36b.png">
+<p>Showing that a new column called average rating was added in Products table.</p>
+</td></tr>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table>
+<tr><td>F7 - User can sort products by average rating on the Shop Page</td></tr>
+<tr><td>Status: 
+<img width="100" height="20" src="https://via.placeholder.com/400x120/ff0000/000000?text=incomplete"></td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147157910-857e064e-77d7-4001-bc82-0e24adc6c4bd.png">
+<p>Showing that sort by rating was attempted and is there in the ui.</p>
+</td></tr>
+
+<tr><td>
+<img width="768px" src="https://user-images.githubusercontent.com/70830819/147158161-c465c0ea-c8a1-4556-9f47-28f6ca936b0c.png">
+<p>Showing that there was an attempt in the code, the issue I faced was with the empty ratings on unrated products. When I was trying to sort the valves, it could not sort null so then I made it so that all unrated products would be set to 0 however, this did not solve the issue. I believe the error displayed is saying that it cannot sort 0 because it is a null value, but I can't set any other values to the rating.</p>
 </td></tr>
 
 </td>
