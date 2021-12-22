@@ -6,7 +6,7 @@ $db = getDB();
 //Sort and Filters
 $col = se($_GET, "col", "cost", false);
 //allowed list
-if (!in_array($col, ["cost", "stock", "name", "created"])) {
+if (!in_array($col, ["cost", "stock", "name", "created", "rating"])) {
     $col = "cost"; //default value, prevent sql injection
 }
 $order = se($_GET, "order", "asc", false);
@@ -17,9 +17,9 @@ if (!in_array($order, ["asc", "desc"])) {
 $name = se($_GET, "name", "", false);
 
 //split query into data and total
-$base_query = "SELECT id, name, description, category, cost, stock, image FROM Products items";
-$total_query = "SELECT count(1) as total FROM Products items";
-//$query = "SELECT id, name, description, category, cost, stock, image FROM Products items WHERE 1=1 AND stock > 0 AND visibility =1";
+$base_query = "SELECT id, name, description, category, cost, stock, image, average_rating FROM Products";
+$total_query = "SELECT count(1) as total FROM Products";
+//$query = "SELECT id, name, description, category, cost, stock, image FROM Products WHERE 1=1 AND stock > 0 AND visibility =1";
 //dynamic query
 $query = " WHERE 1=1 AND stock > 0 AND visibility =1"; //1=1 shortcut to conditionally build AND clauses
 $params = []; //define default params, add keys as needed and pass to execute
@@ -89,7 +89,6 @@ try {
 } catch (PDOException $e) {
     flash("<pre>" . var_export($e, true) . "</pre>");
 }
-
 ?>
 
 <script>
@@ -174,16 +173,21 @@ try {
                     <option value="stock">Stock</option>
                     <option value="name">Name</option>
                     <option value="created">Created</option>
+                    <option value="rating">Rating</option>
                 </select>
                 <select class="form-control" name="category_filter">
-                    <?php foreach (get_categories() as $category): ?>
-                        <option require value="<?php se($category,'category');?>"><?php  se($category, "category") ?></option>
+                    <option value="">All Categories</option>
+                    <?php foreach (get_categories() as $cat): ?>
+                        <option require value="<?php se($cat,'category');?>"><?php  se($cat, "category") ?></option>
+                        
                     <?php endforeach;?>
                 </select>
 
                 <script>
                     document.forms[0].col.value = "<?php se($col); ?>";
+                    document.forms[0].category_filter.value = "<?php se($category, "category"); ?>";
                 </script>
+
                 <select class="form-control" name="order" value="<?php se($order); ?>">
                     <option value="asc">Up</option>
                     <option value="desc">Down</option>
