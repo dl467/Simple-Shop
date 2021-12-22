@@ -14,6 +14,37 @@ try{
 } catch (PDOException $e) {
     echo "<pre>" . var_export($e, true) . "</pre>";
 }
+
+$db2 = getDB();
+$stmt2 = $db2->prepare("SELECT user_id, ratings, comment, created FROM Ratings where product_id = :pid");
+try{
+    $stmt2->execute([":pid" => $id]);
+    $ratings = $stmt2->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+
+}
+
+$total_rating = 0;
+$rating_count = 0;
+foreach ($ratings as $index => $rates){
+    $rating_count = $index + 1;
+    $total_rating = $total_rating + (int)$rates["ratings"];
+}
+
+if ($rating_count>0){
+    $db3 = getDB(); 
+    $average_rating = $total_rating / $rating_count;
+    $stmt3 = $db3->prepare("UPDATE Products SET average_rating=:avr WHERE id=:pid");
+    $stmt3->execute([":avr" => $average_rating, ":pid" => $id]);
+    $average_rating .= " / 5";
+} else {
+    $average_rating = "No Ratings";
+    $db3 = getDB();
+    $aver = 0;
+    $stmt3 = $db3->prepare("UPDATE Products SET average_rating=:avr WHERE id=:pid");
+    $stmt3->execute([":avr" => $aver, ":pid" => $id]);
+}
+//echo "<pre>" . var_export($average_rating, true).  "</pre>";
 ?>
 
 <script>
@@ -80,8 +111,8 @@ try{
         }
     }
 </script>
-
 <div class="container-fluid">
+    <h4>Average Rating : <?php echo $average_rating ?></h4>
   <div class="card mb-3" style="max-width: 600px;">
     <div class="row g-0">
         <div class="col-md-4">
@@ -94,6 +125,10 @@ try{
             <h5 class="card-title">Name: <?php se($results, "name"); ?></h5>
             <p class="card-text">Category: <?php se($results, "category"); ?></p>
             <p class="card-text">Description: <?php se($results, "description"); ?></p>
+            <?php if (is_logged_in()) : ?>
+                <a href="rate_item.php?id=<?php se($results, "id"); ?>">Rate Item</a>
+            <?php endif; ?>
+            &nbsp;&nbsp;
             <?php if (has_role("Admin")) : ?>
                 <a href="admin/edit_item.php?id=<?php se($results, "id"); ?>">Edit</a>
             <?php endif; ?>
@@ -104,8 +139,40 @@ try{
             </div>
         </div>
     </div>
-  </div>
+  </div> 
 </div>
+
+<div class="container-fluid">
+        <h3>Customer Reviews</h3>
+        <div class="card-body">
+            <table class="table ">
+                <thead style="text-align:center">
+                    <th>User</th>
+                    <th>Rating</th>
+                    <th>Comments</th>
+                    <th>Date</th>
+                </thead>
+                <tbody>
+                    <?php if (!$ratings || count($ratings) == 0) : ?>
+                        <tr>
+                            <td colspan="100%">No reviews left</td>
+                        </tr>
+                    <?php else : ?>
+                        <?php foreach ($ratings as $rating) : //echo "<pre>" . var_export($rating, true).  "</pre>";?>
+                            <tr style="text-align:center">
+                                <td><?php se($rating, "user_id");?></td>
+                                <td><?php se($rating, "ratings");?></td>
+                                <td><?php se($rating, "comment");?></td>
+                                <td><?php se($rating, "created");?></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </tbody>
+            </table>
+        </div>
+        <?php include(__DIR__ . "/../../partials/pagination.php"); ?>
+    </div>
+
 
 <?php
 require(__DIR__ . "/../../partials/flash.php");

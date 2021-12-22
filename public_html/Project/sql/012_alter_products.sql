@@ -1,0 +1,1 @@
+ALTER table Products ADD COLUMN average_rating float 
