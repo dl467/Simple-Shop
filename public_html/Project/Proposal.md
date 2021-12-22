@@ -203,7 +203,7 @@ Hello
                     - Screenshot #2 Showing other validations are checked as well.
 
                 - Screenshot #3 <img width="1438" alt="Screen Shot 2021-11-11 at 10 37 27 PM" src="https://user-images.githubusercontent.com/70830819/141404888-12469e82-a6fd-4b59-a759-afff74fee52d.png">
-                    - Screenshot #3 Showing password is able to reset with correct information.
+                    - Screenshot #3 Showing password is able to reset with correct information. 
                 
                     
 
