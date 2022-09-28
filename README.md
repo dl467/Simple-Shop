@@ -1,3 +1,6 @@
+# To Visit Website
+- https://dl467-prod.herokuapp.com/Project/register.php
+
 # Heroku Setup
 
 - 08/30/2021 removed .htaccess and updated Procfile to use public_html as docroot
